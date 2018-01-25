@@ -1,4 +1,4 @@
-format mz
+﻿format mz
 begin:
 	mov ax,cs
 	mov ds,ax
@@ -10,8 +10,8 @@ begin:
 	mov si,dlArray
 	call snakeOutput
 
-	mov ax,4c00h		;�㭪�� ��室�
-	int 21h				;��室
+	mov ax,4c00h		;Функция выхода
+	int 21h				;Выход
 
 snakeOutput:
 	push di
